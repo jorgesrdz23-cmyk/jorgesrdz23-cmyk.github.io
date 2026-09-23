@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Perfil profesional de Jorge Sánchez">
+    <meta name="author" content="Jorge Sánchez">
+
+    <title>Jorge Sánchez | Perfil Profesional</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        /* =========================
+           VARIABLES
+        ========================= */
+
+        :root {
+            --fondo: #f5f5f2;
+            --blanco: #ffffff;
+            --texto: #151515;
+            --texto-suave: #686868;
+            --verde: #173b36;
+            --verde-oscuro: #101816;
+            --dorado: #c8a96b;
+            --linea: #ddddda;
+            --ancho: 1150px;
+        }
+
+
+        /* =========================
+           RESET
+        ========================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Inter", sans-serif;
+            background: var(--fondo);
+            color: var(--texto);
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .contenedor {
+            width: min(92%, var(--ancho));
+            margin: auto;
+        }
+
+
+        /* =========================
+           NAVEGACIÓN
+        ========================= */
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 100;
+
+            background: rgba(245, 245, 242, 0.92);
+            backdrop-filter: blur(12px);
+
+            border-bottom: 1px solid rgba(221, 221, 218, 0.8);
+        }
+
+        .nav-contenido {
+            height: 72px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 0.9rem;
+            letter-spacing: 0.18em;
+            color: var(--verde);
+        }
+
+        .menu {
+            display: flex;
+            gap: 30px;
+        }
+
+        .menu a {
+            font-size: 0.78rem;
+            color: var(--texto-suave);
+            transition: 0.2s ease;
+        }
+
+        .menu a:hover {
+            color: var(--verde);
+        }
+
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+            min-height: 92vh;
+
+            display: flex;
+            align-items: center;
+
+            padding: 130px 0 80px;
+
+            background:
+                radial-gradient(
+                    circle at 85% 20%,
+                    rgba(200, 169, 107, 0.16),
+                    transparent 30%
+                ),
+                radial-gradient(
+                    circle at 10% 80%,
+                    rgba(23, 59, 54, 0.08),
+                    transparent 30%
+                ),
+                var(--fondo);
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.25fr 0.75fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .etiqueta {
+            text-transform: uppercase;
+            letter-spacing: 0.22em;
+            font-size: 0.7rem;
+            font-weight: 700;
+            color: var(--verde);
+
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-family: "Playfair Display", serif;
+
+            font-size: clamp(4rem, 9vw, 7.5rem);
+
+            line-height: 0.88;
+
+            letter-spacing: -0.06em;
+
+            margin-bottom: 30px;
+        }
+
+        .descripcion-principal {
+            max-width: 650px;
+
+            font-size: 1.2rem;
+
+            color: #444;
+
+            margin-bottom: 30px;
+        }
+
+        .etiquetas {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .etiqueta-pill {
+            padding: 8px 14px;
+
+            border: 1px solid var(--linea);
+
+            border-radius: 100px;
+
+            font-size: 0.76rem;
+
+            background: rgba(255,255,255,0.5);
+        }
+
+
+        /* TARJETA HERO */
+
+        .tarjeta-hero {
+            background: var(--verde-oscuro);
+
+            color: white;
+
+            min-height: 390px;
+
+            padding: 40px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            box-shadow: 20px 20px 0 var(--dorado);
+        }
+
+        .monograma {
+            width: 85px;
+            height: 85px;
+
+            border: 1px solid rgba(255,255,255,0.4);
+
+            border-radius: 50%;
+
+            display: grid;
+            place-items: center;
+
+            font-family: "Playfair Display", serif;
+
+            font-size: 2rem;
+        }
+
+        .tarjeta-hero h2 {
+            font-family: "Playfair Display", serif;
+
+            font-size: 2rem;
+
+            line-height: 1.1;
+
+            margin-bottom: 12px;
+        }
+
+        .tarjeta-hero p {
+            color: #c9cfcc;
+
+            font-size: 0.9rem;
+        }
+
+
+        /* =========================
+           SECCIONES
+        ========================= */
+
+        section {
+            padding: 105px 0;
+        }
+
+        .titulo-seccion {
+            display: flex;
+
+            align-items: center;
+
+            gap: 15px;
+
+            margin-bottom: 50px;
+        }
+
+        .numero {
+            color: var(--dorado);
+
+            font-weight: 700;
+
+            font-size: 0.75rem;
+        }
+
+        .titulo-seccion h2 {
+            font-family: "Playfair Display", serif;
+
+            font-size: clamp(2.5rem, 5vw, 4rem);
+
+            line-height: 1;
+
+            letter-spacing: -0.03em;
+        }
+
+        .linea {
+            height: 1px;
+
+            background: var(--linea);
+
+            flex: 1;
+        }
+
+
+        /* =========================
+           PERFIL
+        ========================= */
+
+        .perfil-grid {
+            display: grid;
+
+            grid-template-columns: 0.75fr 1.25fr;
+
+            gap: 80px;
+        }
+
+        .perfil-frase {
+            font-family: "Playfair Display", serif;
+
+            font-size: 1.8rem;
+
+            line-height: 1.25;
+        }
+
+        .perfil-texto {
+            color: #505050;
+
+            font-size: 1rem;
+        }
+
+        .perfil-texto p + p {
+            margin-top: 20px;
+        }
+
+
+        /* =========================
+           EXPERIENCIA
+        ========================= */
+
+        .experiencia {
+            background: #eeeeea;
+        }
+
+        .puesto {
+            display: grid;
+
+            grid-template-columns: 180px 1fr;
+
+            gap: 60px;
+
+            padding: 45px 0;
+
+            border-top: 1px solid #d3d3cc;
+        }
+
+        .puesto:last-child {
+            border-bottom: 1px solid #d3d3cc;
+        }
+
+        .fecha {
+            font-size: 0.72rem;
+
+            text-transform: uppercase;
+
+            letter-spacing: 0.13em;
+
+            color: var(--texto-suave);
+        }
+
+        .puesto h3 {
+            font-size: 1.5rem;
+
+            margin-bottom: 5px;
+        }
+
+        .empresa {
+            color: var(--verde);
+
+            font-weight: 600;
+
+            margin-bottom: 22px;
+        }
+
+        .puesto ul {
+            list-style: none;
+        }
+
+        .puesto li {
+            position: relative;
+
+            padding-left: 20px;
+
+            margin: 10px 0;
+
+            color: #4c4c4c;
+        }
+
+        .puesto li::before {
+            content: "—";
+
+            position: absolute;
+
+            left: 0;
+
+            color: var(--dorado);
+        }
+
+
+        /* =========================
+           COMPETENCIAS
+        ========================= */
+
+        .competencias-grid {
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 16px;
+        }
+
+        .competencia {
+            background: var(--blanco);
+
+            border: 1px solid var(--linea);
+
+            padding: 30px;
+
+            min-height: 175px;
+
+            transition: 0.25s ease;
+        }
+
+        .competencia:hover {
+            transform: translateY(-5px);
+
+            box-shadow: 0 15px 30px rgba(0,0,0,0.06);
+        }
+
+        .competencia-numero {
+            color: var(--dorado);
+
+            font-weight: 700;
+
+            font-size: 0.72rem;
+
+            letter-spacing: 0.12em;
+        }
+
+        .competencia h3 {
+            margin: 12px 0 8px;
+
+            font-size: 1.05rem;
+        }
+
+        .competencia p {
+            color: var(--texto-suave);
+
+            font-size: 0.84rem;
+        }
+
+
+        /* =========================
+           EDUCACIÓN
+        ========================= */
+
+        .educacion {
+            background: var(--verde-oscuro);
+
+            color: white;
+        }
+
+        .educacion .linea {
+            background: #3a4542;
+        }
+
+        .educacion-grid {
+            display: grid;
+
+            grid-template-columns: 1fr;
+
+            gap: 35px;
+        }
+
+        .educacion-card {
+            border-left: 2px solid var(--dorado);
+
+            padding-left: 25px;
+        }
+
+        .educacion-card .tipo {
+            color: var(--dorado);
+
+            text-transform: uppercase;
+
+            letter-spacing: 0.13em;
+
+            font-size: 0.72rem;
+        }
+
+        .educacion-card h3 {
+            font-family: "Playfair Display", serif;
+
+            font-size: 1.8rem;
+
+            margin: 10px 0 5px;
+        }
+
+        .educacion-card p {
+            color: #c5cdca;
+        }
+
+
+        /* =========================
+           PIE DE PÁGINA
+        ========================= */
+
+        footer {
+            background: var(--verde-oscuro);
+
+            color: white;
+
+            padding: 40px 0 30px;
+
+            border-top: 1px solid #394441;
+        }
+
+        .footer-contenido {
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            gap: 30px;
+        }
+
+        .footer-nombre {
+            font-family: "Playfair Display", serif;
+
+            font-size: 1.6rem;
+        }
+
+        .footer-info {
+            color: #aeb7b4;
+
+            font-size: 0.78rem;
+
+            margin-top: 4px;
+        }
+
+        .arriba {
+            border: 1px solid #53605c;
+
+            padding: 9px 14px;
+
+            font-size: 0.72rem;
+
+            transition: 0.2s ease;
+        }
+
+        .arriba:hover {
+            border-color: var(--dorado);
+        }
+
+
+        /* =========================
+           RESPONSIVE
+        ========================= */
+
+        @media (max-width: 850px) {
+
+            .menu {
+                display: none;
+            }
+
+            .hero {
+                min-height: auto;
+
+                padding-top: 120px;
+            }
+
+            .hero-grid {
+                grid-template-columns: 1fr;
+
+                gap: 60px;
+            }
+
+            .perfil-grid {
+                grid-template-columns: 1fr;
+
+                gap: 40px;
+            }
+
+            .puesto {
+                grid-template-columns: 1fr;
+
+                gap: 12px;
+            }
+
+            .competencias-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            section {
+                padding: 75px 0;
+            }
+        }
+
+
+        @media (max-width: 520px) {
+
+            h1 {
+                font-size: 4.2rem;
+            }
+
+            .competencias-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .tarjeta-hero {
+                min-height: 320px;
+
+                box-shadow: 10px 10px 0 var(--dorado);
+            }
+
+            .footer-contenido {
+                flex-direction: column;
+
+                align-items: flex-start;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <!-- =========================
+         NAVEGACIÓN
+    ========================= -->
+
+    <nav>
+
+        <div class="contenedor nav-contenido">
+
+            <a href="#inicio" class="logo">
+                JS
+            </a>
+
+            <div class="menu">
+
+                <a href="#perfil">
+                    Perfil
+                </a>
+
+                <a href="#experiencia">
+                    Experiencia
+                </a>
+
+                <a href="#competencias">
+                    Competencias
+                </a>
+
+                <a href="#educacion">
+                    Formación
+                </a>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- =========================
+         INICIO
+    ========================= -->
+
+    <header class="hero" id="inicio">
+
+        <div class="contenedor hero-grid">
+
+            <div>
+
+                <div class="etiqueta">
+                    Perfil profesional
+                </div>
+
+                <h1>
+                    Jorge<br>
+                    Sánchez
+                </h1>
+
+                <p class="descripcion-principal">
+
+                    Estudiante de Administración y Gestión con experiencia
+                    profesional en cuentas por cobrar, procesos fiscales,
+                    gestión documental y control de información financiera.
+
+                </p>
+
+                <div class="etiquetas">
+
+                    <span class="etiqueta-pill">
+                        Cuentas por cobrar
+                    </span>
+
+                    <span class="etiqueta-pill">
+                        Finanzas
+                    </span>
+
+                    <span class="etiqueta-pill">
+                        Procesos fiscales
+                    </span>
+
+                    <span class="etiqueta-pill">
+                        Gestión documental
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <aside class="tarjeta-hero">
+
+                <div class="monograma">
+                    JS
+                </div>
+
+                <div>
+
+                    <h2>
+                        Administración<br>
+                        y Finanzas
+                    </h2>
+
+                    <p>
+                        San Luis Potosí, México
+                    </p>
+
+                </div>
+
+            </aside>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================
+         PERFIL
+    ========================= -->
+
+    <section id="perfil">
+
+        <div class="contenedor">
+
+            <div class="titulo-seccion">
+
+                <span class="numero">
+                    01
+                </span>
+
+                <h2>
+                    Perfil
+                </h2>
+
+                <div class="linea"></div>
+
+            </div>
+
+
+
+            <div class="perfil-grid">
+
+                <div>
+
+                    <p class="perfil-frase">
+
+                        Experiencia en procesos administrativos,
+                        financieros y fiscales.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="perfil-texto">
+
+                    <p>
+
+                        Estudiante de Administración y Gestión con
+                        experiencia en diferentes áreas relacionadas con
+                        administración, finanzas, cuentas por cobrar y
+                        procesos fiscales.
+
+                    </p>
+
+                    <p>
+
+                        Mi experiencia profesional incluye actividades
+                        relacionadas con la gestión de información financiera,
+                        validación de clientes y contribuyentes, seguimiento
+                        documental, cuentas por cobrar y actualización de
+                        bases de datos.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         EXPERIENCIA
+    ========================= -->
+
+    <section class="experiencia" id="experiencia">
+
+        <div class="contenedor">
+
+            <div class="titulo-seccion">
+
+                <span class="numero">
+                    02
+                </span>
+
+                <h2>
+                    Experiencia
+                </h2>
+
+                <div class="linea"></div>
+
+            </div>
+
+
+
+            <!-- ATMus -->
+
+            <article class="puesto">
+
+                <div class="fecha">
+
+                    Feb 2025<br>
+                    —<br>
+                    Ago 2025
+
+                </div>
+
+
+                <div>
+
+                    <h3>
+                        Practicante de Cuentas por Cobrar
+                    </h3>
+
+                    <div class="empresa">
+                        Atmus Filtration
+                    </div>
+
+                    <ul>
+
+                        <li>
+                            Apoyo en la gestión de Cuentas por Cobrar
+                            para clientes de México, Estados Unidos y Brasil.
+                        </li>
+
+                        <li>
+                            Apoyo en la aplicación de pagos y créditos
+                            para clientes de México, Estados Unidos y Brasil.
+                        </li>
+
+                        <li>
+                            Creación y envío de comprobantes de pago de
+                            Bank of America para clientes de Brasil.
+                        </li>
+
+                        <li>
+                            Validación de facturas para México.
+                        </li>
+
+                        <li>
+                            Liberación de órdenes de clientes mexicanos
+                            que se encontraban en hold.
+                        </li>
+
+                        <li>
+                            Actualización de Estados de Cuenta.
+                        </li>
+
+                        <li>
+                            Creación y actualización de manuales operativos.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- SAT -->
+
+            <article class="puesto">
+
+                <div class="fecha">
+
+                    Sep 2025<br>
+                    —<br>
+                    Dic 2025
+
+                </div>
+
+
+                <div>
+
+                    <h3>
+                        Practicante de Recaudación de Impuestos
+                    </h3>
+
+                    <div class="empresa">
+                        SAT
+                    </div>
+
+                    <ul>
+
+                        <li>
+                            Apoyo en el proceso de cancelación de
+                            Créditos Fiscales correspondientes a 2020 y 2021.
+                        </li>
+
+                        <li>
+                            Verificación y validación de información
+                            de contribuyentes en el sistema del SAT.
+                        </li>
+
+                        <li>
+                            Organización, control y actualización
+                            de expedientes fiscales.
+                        </li>
+
+                        <li>
+                            Cálculo y actualización de impuestos de acuerdo
+                            con las disposiciones fiscales mexicanas de 2025.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- LAW OFFICES -->
+
+            <article class="puesto">
+
+                <div class="fecha">
+
+                    Ene 2026<br>
+                    —<br>
+                    Presente
+
+                </div>
+
+
+                <div>
+
+                    <h3>
+                        Practicante de Gestión Digital
+                    </h3>
+
+                    <div class="empresa">
+                        Law Offices of Manuel Solis
+                    </div>
+
+                    <ul>
+
+                        <li>
+                            Apoyo en la gestión de información financiera
+                            y contractual entre sistemas como HubSpot y ClickUp.
+                        </li>
+
+                        <li>
+                            Verificación de contratos, facturas e
+                            información de clientes.
+                        </li>
+
+                        <li>
+                            Actualización de bases de datos para
+                            control financiero.
+                        </li>
+
+                        <li>
+                            Elaboración de saldos de clientes para
+                            apoyar procesos de cobranza.
+                        </li>
+
+                        <li>
+                            Creación y actualización de formularios
+                            I-360 y G-28 para procesos de VISA.
+                        </li>
+
+                        <li>
+                            Apoyo en el seguimiento de documentación
+                            de clientes.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         COMPETENCIAS
+    ========================= -->
+
+    <section id="competencias">
+
+        <div class="contenedor">
+
+            <div class="titulo-seccion">
+
+                <span class="numero">
+                    03
+                </span>
+
+                <h2>
+                    Competencias
+                </h2>
+
+                <div class="linea"></div>
+
+            </div>
+
+
+
+            <div class="competencias-grid">
+
+
+                <div class="competencia">
+
+                    <span class="competencia-numero">
+                        01
+                    </span>
+
+                    <h3>
+                        Cuentas por Cobrar
+                    </h3>
+
+                    <p>
+                        Gestión de cuentas, aplicación de pagos,
+                        créditos, saldos y seguimiento de cobranza.
+                    </p>
+
+                </div>
+
+
+
+                <div class="competencia">
+
+                    <span class="competencia-numero">
+                        02
+                    </span>
+
+                    <h3>
+                        Información financiera
+                    </h3>
+
+                    <p>
+                        Actualización y control de información
+                        para procesos financieros.
+                    </p>
+
+                </div>
+
+
+
+                <div class="competencia">
+
+                    <span class="competencia-numero">
+                        03
+                    </span>
+
+                    <h3>
+                        Gestión documental
+                    </h3>
+
+                    <p>
+                        Organización, validación y seguimiento
+                        de documentación de clientes.
+                    </p>
+
+                </div>
+
+
+
+                <div class="competencia">
+
+                    <span class="competencia-numero">
+                        04
+                    </span>
+
+                    <h3>
+                        Procesos fiscales
+                    </h3>
+
+                    <p>
+                        Validación de contribuyentes, expedientes
+                        fiscales y cálculo de impuestos.
+                    </p>
+
+                </div>
+
+
+
+                <div class="competencia">
+
+                    <span class="competencia-numero">
+                        05
+                    </span>
+
+                    <h3>
+                        Sistemas de gestión
+                    </h3>
+
+                    <p>
+                        Manejo de información entre plataformas
+                        como HubSpot y ClickUp.
+                    </p>
+
+                </div>
+
+
+
+                <div class="competencia">
+
+                    <span class="competencia-numero">
+                        06
+                    </span>
+
+                    <h3>
+                        Control de bases de datos
+                    </h3>
+
+                    <p>
+                        Actualización y mantenimiento de bases
+                        de datos para control administrativo y financiero.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         FORMACIÓN
+    ========================= -->
+
+    <section class="educacion" id="educacion">
+
+        <div class="contenedor">
+
+            <div class="titulo-seccion">
+
+                <span class="numero">
+                    04
+                </span>
+
+                <h2>
+                    Formación
+                </h2>
+
+                <div class="linea"></div>
+
+            </div>
+
+
+
+            <div class="educacion-grid">
+
+                <div class="educacion-card">
+
+                    <div class="tipo">
+                        Licenciatura
+                    </div>
+
+                    <h3>
+                        Administración y Gestión
+                    </h3>
+
+                    <p>
+                        Formación universitaria en Administración y Gestión.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
+
+    <footer>
+
+        <div class="contenedor footer-contenido">
+
+            <div>
+
+                <div class="footer-nombre">
+                    Jorge Sánchez
+                </div>
+
+                <div class="footer-info">
+                    Perfil profesional · San Luis Potosí, México
+                </div>
+
+            </div>
+
+
+            <a href="#inicio" class="arriba">
+                Volver arriba ↑
+            </a>
+
+        </div>
+
+    </footer>
+
+
+</body>
+</html>
