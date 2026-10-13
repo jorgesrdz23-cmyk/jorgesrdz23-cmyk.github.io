@@ -1,0 +1,5 @@
+PORTAFOLIO PROFESIONAL — JORGE SÁNCHEZ RODRÍGUEZ
+
+Abre index.html en un navegador. Incluye secciones ES/EN, CV, cartas de presentación en Word, logotipo, tarjetas horizontales en español e inglés y únicamente la imagen del código QR (sin enlace de texto).
+
+Para publicar en GitHub Pages, sube el contenido de esta carpeta al repositorio. Los videos no se incluyeron; agrega videos/videocv-es.mp4 y videos/videocv-en.mp4 si deseas activarlos.
